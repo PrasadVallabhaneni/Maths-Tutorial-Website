@@ -1,0 +1,188 @@
+body {
+  font: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+#container {
+  width: 90%;
+  /* border: 1px solid white; */
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+   height: 100vh;
+}
+#header {
+  /* height: 100px; */
+  padding: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+h1 a {
+  font-size: 50px;
+  font-weight: 50;
+  color: rgb(189, 48, 189);
+  text-decoration: none;
+}
+#brand {
+  /* float: left; // it is used for making all elements in single line... because of brand name as block element any other elements in that container comes under next line....// */
+  flex: 50%;
+  /* min-width: 400px; */
+}
+#searchbox {
+  /* float: right; */
+  flex: 50%;
+  /* margin-top: 20px; */
+  background: linear-gradient(rgb(218, 245, 145), rgb(164, 224, 85));
+  min-width: 400px;
+  /* height: 50px; */
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  /* float: left; */
+  width: 200px;
+  padding: 5px;
+  font-size: 15px;
+  color: orange;
+  background: white url(images/search.png) right center no-repeat;
+  margin-top: 17px;
+}
+.submit {
+  /* float: right; */
+  font-weight: bold;
+  color: aliceblue;
+  background: rgb(189, 48, 189);
+  padding: 5px;
+  font-size: 13px;
+}
+.clear {
+  clear: both;
+}
+#menu {
+  /* height: 70px; */
+  background: linear-gradient(rgb(243, 245, 140), rgb(213, 231, 50));
+  padding: 20px 0px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#menu a {
+  /* float: left; */
+  padding: 0 30px;
+  border-right: rgb(189, 48, 189) 1px solid;
+  height: 30px;
+  /* margin: 5px; */
+}
+#menu a {
+  text-decoration: none;
+  color: rgb(189, 48, 189);
+  font-size: 17px;
+  text-transform: uppercase;
+  line-height: 30px;
+  -webkit-transition: font-size 0.3s ease; // safari
+  -moz-transition: font-size 0.3s ease; // firefox
+  -o-transition: font-size 0.3s ease; // opera
+  -ms-transition: font-size 0.3s ease; // internet explorer
+  transition: font-size 0.3s ease; // chrome
+}
+#menu a:last-child {
+  border-right: none;
+}
+#menu a:hover,
+#menu a.active {
+  font-size: 20px;
+  font-weight: bold;
+  color: purple;
+}
+@media screen and (max-width: 700px) {
+  #menu {
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+  }
+  #menu a {
+    border-right: none;
+  }
+}
+
+#intro {
+  /* height: 350; */
+  background: linear-gradient(rgb(230, 247, 192), rgb(171, 218, 64));
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#intro h1 {
+  color: green;
+  font-weight: 10;
+  font-size: 45px;
+  padding-top: 60px;
+  padding-left: 30px;
+}
+#intro p {
+  font-size: 25px;
+  color: rgba(0, 128, 0, 0.804);
+  padding: 10px 30px;
+}
+.sidebars {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar {
+  /* width: 550px; */
+  /* height: 500px; */
+  margin-top: 30px;
+  padding: 10px 30px;
+  flex: 50%;
+  min-width: 300px;
+}
+h3 {
+  font-size: 30px;
+  color: purple;
+}
+.sidebar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: blue;
+  transition: font-size 0.3s ease;
+}
+#left-sidebar {
+  /* float: left; */
+  border: greenyellow 1px solid;
+  border-radius: 20px;
+}
+#right-sidebar {
+  /* float: right; */
+  border: greenyellow 1px solid;
+  border-radius: 20px;
+}
+#left-sidebar ul li {
+  padding: 5px;
+  list-style: url(images/arrow.png);
+}
+#right-sidebar ul li {
+  padding: 10px;
+  list-style: url(images/tick.png);
+}
+.sidebar ul li a:hover {
+  text-decoration: none;
+  font-size: 25px;
+  color: purple;
+  font-weight: bold;
+}
+.footer {
+  height: 60px;
+  background: linear-gradient(rgb(240, 250, 97), rgb(216, 228, 58));
+  font-size: 15px;
+  padding: 5px 30px;
+  margin-top: 15px;
+}
